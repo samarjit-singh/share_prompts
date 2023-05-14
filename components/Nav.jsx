@@ -12,6 +12,7 @@ const Nav = () => {
   const [toggleDropdown, setToggleDropdown] = useState(false);
 
   useEffect(() => {
+    // Our provider in this case is google
     (async () => {
       const res = await getProviders();
       setProviders(res);
